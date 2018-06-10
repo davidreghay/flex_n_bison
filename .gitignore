@@ -1,0 +1,5 @@
+#ignore all lex output files
+**/lex.yy.c
+
+#ignore binaries
+bin/**
