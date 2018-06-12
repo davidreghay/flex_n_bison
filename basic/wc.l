@@ -8,9 +8,9 @@ int lines = 0;
 
 %%
 
-[a-zA-Z]+	{ words++; chars += strlen(yytext); }
-\n			{ chars++; lines++; }
-.			{ chars++; }
+[^ \t\n\r\f\v]+	{ words++; chars += strlen(yytext); }
+\n				{ chars++; lines++; }
+.				{ chars++; }
 
 %%
 
