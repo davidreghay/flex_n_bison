@@ -1,5 +1,7 @@
-#ignore all lex output files
+#ignore all lex and yacc output files
 **/lex.yy.c
+**/*.tab.c
+**/*.tab.h
 
 #ignore binaries
 bin/**
